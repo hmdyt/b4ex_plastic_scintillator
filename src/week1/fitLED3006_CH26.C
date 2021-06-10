@@ -13,9 +13,9 @@ void fitLED3006_CH26(){
 
     // arrange hist title
     hist->SetTitle(FILENAME + " " + CHANNEL);
-    
+
     // draw and save
     auto c = new TCanvas();
     hist->Draw();
-    c->SaveAs("img/week1/" + FILENAME + ".pdf");
+    c->SaveAs("img/week1/" + FILENAME + "CH" + CHANNEL + ".pdf");
 }

@@ -17,5 +17,5 @@ void fitLED3005_CH29(){
     // draw and save
     auto c = new TCanvas();
     hist->Draw();
-    c->SaveAs("img/week1/" + FILENAME + ".pdf");
+    c->SaveAs("img/week1/" + FILENAME + "CH" + CHANNEL + ".pdf");
 }
