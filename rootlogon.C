@@ -19,11 +19,4 @@ void rootlogon(){
     // week1
     loadMacro("src/week1/getHistMPPC.C");
     loadMacro("src/week1/getMultiGaus.C");
-    loadMacro("src/week1/fitLED3005_CH26.C");
-    loadMacro("src/week1/fitLED3006_CH26.C");
-    loadMacro("src/week1/fitLED3007_CH26.C");
-    loadMacro("src/week1/fitLED3005_CH29.C");
-    loadMacro("src/week1/fitLED3006_CH29.C");
-    loadMacro("src/week1/fitLED3007_CH29.C");
-
 }
