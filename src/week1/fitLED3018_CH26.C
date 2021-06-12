@@ -5,14 +5,42 @@ void fitLED3018_CH26(){
     const Double_t XMIN = 800;
     const Double_t XMAX = 1350;
 
-    // fetch hist
+    // init fitting propaties
+    const Int_t GAUSNUM = 12;
+    const Double_t FIT_RANGE_MIN = 800;
+    const Double_t FIT_RANGE_MAX = 1260;
+    const TString SETTING_FILE = "src/week1/settings/fitLED3018_CH26.txt";
+    const TString MULTIGAUS = getMultiGaus(GAUSNUM);
+
+    // fetch and configurate hist
     TH1D* hist = getHistMPPC(FILENAME, CHANNEL);
-
-    // arrange x range
     hist->GetXaxis()->SetRangeUser(XMIN, XMAX);
-
-    // arrange hist title
     hist->SetTitle(FILENAME + " " + CHANNEL);
+
+    // init TF1
+    TF1* f = new TF1("f", MULTIGAUS, FIT_RANGE_MIN, FIT_RANGE_MAX);
+    f->SetNpx(10000);
+
+    // set parnames
+    for (Int_t i=0; i<GAUSNUM; i++) {
+        f->SetParName(3*i + 0, (TString)to_string(i) + (TString)"th Const");
+        f->SetParName(3*i + 1, (TString)to_string(i) + (TString)"th Mean"); 
+        f->SetParName(3*i + 2, (TString)to_string(i) + (TString)"th Sigma"); 
+    }
+
+    // set init params from setting file
+    ifstream ifs(SETTING_FILE);
+    Double_t ini_const, ini_mean, ini_sigma;
+    for (Int_t i=0; i<GAUSNUM; i++){
+        ifs >> ini_const >> ini_mean >> ini_sigma;
+        f->SetParameter(3*i + 0, ini_const);
+        f->SetParameter(3*i + 1, ini_mean);
+        f->SetParameter(3*i + 2, ini_sigma);
+        f->SetParLimits(3*i + 2, 0, 100);
+    }
+    
+    // execute fitting
+    hist->Fit(f, "R");
 
     // draw and save
     auto c = new TCanvas();
