@@ -1,18 +1,18 @@
-void fitLED3007_CH29(){
+void fitLED3019_CH29(){
     // init file propaties
-    const TString FILENAME = "led3007.root";
+    const TString FILENAME = "led3019.root";
     const TString CHANNEL = "29";
-    const Double_t XMIN = 1100;
-    const Double_t XMAX = 2000;
+    const Double_t XMIN = 800;
+    const Double_t XMAX = 1750;
 
     // fetch hist
     TH1D* hist = getHistMPPC(FILENAME, CHANNEL);
 
-	//set title
-	hist->SetTitle("led3007_ch29");
-
     // arrange x range
     hist->GetXaxis()->SetRangeUser(XMIN, XMAX);
+
+    // arrange hist title
+    hist->SetTitle(FILENAME + " " + CHANNEL);
 
     // draw and save
     auto c = new TCanvas();

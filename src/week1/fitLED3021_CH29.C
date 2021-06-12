@@ -1,9 +1,9 @@
-void fitLED3007_CH26(){
+void fitLED3021_CH29(){
     // init file propaties
-    const TString FILENAME = "led3007.root";
-    const TString CHANNEL = "26";
-    const Double_t XMIN = 1000;
-    const Double_t XMAX = 2100;
+    const TString FILENAME = "led3021.root";
+    const TString CHANNEL = "29";
+    const Double_t XMIN = 800;
+    const Double_t XMAX = 2600;
 
     // fetch hist
     TH1D* hist = getHistMPPC(FILENAME, CHANNEL);
