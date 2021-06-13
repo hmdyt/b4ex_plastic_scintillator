@@ -1,5 +1,4 @@
-void fitLED3018_CH26(){
-    // init file propaties
+void fitLED3018_CH26(){   // init file propaties
     const TString FILENAME = "led3018.root";
     const TString CHANNEL = "26";
     const Double_t XMIN = 800;
@@ -9,7 +8,6 @@ void fitLED3018_CH26(){
     //const Int_t GAUSNUM = 10;
     const Double_t FIT_RANGE_MIN = 800;
     const Double_t FIT_RANGE_MAX = 1260;
-    const TString SETTING_FILE = "src/week1/settings/fitLED3018_CH26.txt";
 
     // fetch and configurate hist
     TH1D* hist = getHistMPPC(FILENAME, CHANNEL);
@@ -22,6 +20,7 @@ void fitLED3018_CH26(){
 
 	const Int_t GAUSNUM = search_peak.size();
     const TString MULTIGAUS = getMultiGaus(GAUSNUM);
+
     // init TF1
     TF1* f = new TF1("f", MULTIGAUS, FIT_RANGE_MIN, FIT_RANGE_MAX);
     f->SetNpx(10000);
@@ -48,6 +47,6 @@ void fitLED3018_CH26(){
     // draw and save
     auto c = new TCanvas();
     hist->Draw();
-    //c->SaveAs("img/week1/" + FILENAME + "CH" + CHANNEL + ".pdf");
-    //c->SaveAs("img/week1/" + FILENAME + "CH" + CHANNEL + ".svg");
+    c->SaveAs("img/week1/" + FILENAME + "CH" + CHANNEL + ".pdf");
+    c->SaveAs("img/week1/" + FILENAME + "CH" + CHANNEL + ".svg");
 }
