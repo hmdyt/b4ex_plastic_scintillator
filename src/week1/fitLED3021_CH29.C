@@ -12,6 +12,7 @@ vector<pair<Double_t, Double_t>> fitLED3021_CH29(){
 
     // fetch and configurate hist
     TH1D* hist = getHistMPPC(FILENAME, CHANNEL);
+    hist->Rebin(2);
     hist->GetXaxis()->SetRangeUser(XMIN, XMAX);
     hist->SetTitle(FILENAME + " " + CHANNEL);
 
