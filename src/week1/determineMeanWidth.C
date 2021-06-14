@@ -42,6 +42,6 @@ void determineMeanWidth(TString run_number = "3018_CH26"){
     auto c = new TCanvas();
     g->Draw("AP");
     c->Draw();
-    c->SaveAs("img/week1/" + run_number + ".svg");
-    c->SaveAs("img/week1/" + run_number + ".pdf");
+    c->SaveAs("img/week1/determineMeanWidth" + run_number + ".svg");
+    c->SaveAs("img/week1/determineMeanWidth" + run_number + ".pdf");
 }
