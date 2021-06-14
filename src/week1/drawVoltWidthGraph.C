@@ -30,8 +30,8 @@ void drawVoltWidthGraph(bool is_show_zero = false){
     // init TGraphErrors
     TGraphErrors* g_ch26 = new TGraphErrors();
     TGraphErrors* g_ch29 = new TGraphErrors();
-    g_ch26->SetTitle("HV - width; HV [V]; width[ADC value]");
-    g_ch29->SetTitle("HV - width; HV [V]; width[ADC value]");
+    g_ch26->SetTitle("HV - width (ch26); HV [V]; width[ADC value]");
+    g_ch29->SetTitle("HV - width (ch29); HV [V]; width[ADC value]");
 
     // fill points
     Double_t x_HV, y_width, x_HV_error, y_width_error;
@@ -74,8 +74,8 @@ void drawVoltWidthGraph(bool is_show_zero = false){
     const Double_t X_MAX_CH29 = 60;
     const Double_t Y_MIN_CH29 = f_ch29->GetParameter(1);
     const Double_t Y_MAX_CH29 = 60;
-    TH2D* axis_ch26 = new TH2D("axis_ch26", "HV - width;HV [V];width [ADC value]", 0, X_MIN_CH26, X_MAX_CH26, 0, Y_MIN_CH26, Y_MAX_CH26);
-    TH2D* axis_ch29 = new TH2D("axis_ch29", "HV - width;HV [V];width [ADC value]", 0, X_MIN_CH29, X_MAX_CH29, 0, Y_MIN_CH29, Y_MAX_CH29);
+    TH2D* axis_ch26 = new TH2D("axis_ch26", "HV - width (ch26);HV [V];width [ADC value]", 0, X_MIN_CH26, X_MAX_CH26, 0, Y_MIN_CH26, Y_MAX_CH26);
+    TH2D* axis_ch29 = new TH2D("axis_ch29", "HV - width (ch29);HV [V];width [ADC value]", 0, X_MIN_CH29, X_MAX_CH29, 0, Y_MIN_CH29, Y_MAX_CH29);
     
     // draw and save
     // ch26
