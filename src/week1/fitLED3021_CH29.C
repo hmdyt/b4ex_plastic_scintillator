@@ -14,7 +14,7 @@ vector<pair<Double_t, Double_t>> fitLED3021_CH29(){
     TH1D* hist = getHistMPPC(FILENAME, CHANNEL);
     hist->Rebin(2);
     hist->GetXaxis()->SetRangeUser(XMIN, XMAX);
-    hist->SetTitle(FILENAME + " " + CHANNEL);
+    hist->SetTitle(FILENAME + " " + CHANNEL + ";ADC value;Events");
 
 	// search peak 
 	const Int_t peakmax = 17;
