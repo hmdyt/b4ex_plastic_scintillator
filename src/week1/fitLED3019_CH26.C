@@ -1,4 +1,4 @@
-void fitLED3019_CH26(){
+vector<pair<Double_t, Double_t>> fitLED3019_CH26(){
     // init file propaties
     const TString FILENAME = "led3019.root";
     const TString CHANNEL = "26";
@@ -49,4 +49,16 @@ void fitLED3019_CH26(){
     hist->Draw();
     c->SaveAs("img/week1/" + FILENAME + "CH" + CHANNEL + ".pdf");
     c->SaveAs("img/week1/" + FILENAME + "CH" + CHANNEL + ".svg");
+
+    // return gaussian means
+    // res = {pair(mean1, mean1_error), pair(mean2, mean2_error)}
+    vector<pair<Double_t, Double_t>> res;
+    for (Int_t i=0; i<GAUSNUM; i++){
+        res.push_back(make_pair(
+            f->GetParameter(3*i + 1), 
+            f->GetParError(3*i + 1)
+            ));
+    }
+    sort(res.begin(), res.end());
+    return res;
 }

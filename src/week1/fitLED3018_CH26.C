@@ -1,11 +1,11 @@
-void fitLED3018_CH26(){   // init file propaties
+vector<pair<Double_t, Double_t>> fitLED3018_CH26(){   
+    // init file propaties
     const TString FILENAME = "led3018.root";
     const TString CHANNEL = "26";
     const Double_t XMIN = 800;
     const Double_t XMAX = 1350;
 
     // init fitting propaties
-    //const Int_t GAUSNUM = 10;
     const Double_t FIT_RANGE_MIN = 800;
     const Double_t FIT_RANGE_MAX = 1260;
 
@@ -49,4 +49,16 @@ void fitLED3018_CH26(){   // init file propaties
     hist->Draw();
     c->SaveAs("img/week1/" + FILENAME + "CH" + CHANNEL + ".pdf");
     c->SaveAs("img/week1/" + FILENAME + "CH" + CHANNEL + ".svg");
+
+    // return gaussian means
+    // res = {pair(mean1, mean1_error), pair(mean2, mean2_error)}
+    vector<pair<Double_t, Double_t>> res;
+    for (Int_t i=0; i<GAUSNUM; i++){
+        res.push_back(make_pair(
+            f->GetParameter(3*i + 1), 
+            f->GetParError(3*i + 1)
+            ));
+    }
+    sort(res.begin(), res.end());
+    return res;
 }
