@@ -20,4 +20,13 @@ void rootlogon(){
     loadMacro("src/week1/getHistMPPC.C");
     loadMacro("src/week1/getMultiGaus.C");
     loadMacro("src/week1/searchPeak.C");
+    loadMacro("src/week1/fitLED3018_CH26.C");
+    loadMacro("src/week1/fitLED3018_CH29.C");
+    loadMacro("src/week1/fitLED3019_CH26.C");
+    loadMacro("src/week1/fitLED3019_CH29.C");
+    loadMacro("src/week1/fitLED3020_CH26.C");
+    loadMacro("src/week1/fitLED3020_CH29.C");
+    loadMacro("src/week1/fitLED3021_CH26.C");
+    loadMacro("src/week1/fitLED3021_CH29.C");
+    loadMacro("src/week1/determineMeanWidth.C");
 }
