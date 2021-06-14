@@ -19,4 +19,5 @@ void rootlogon(){
     // week1
     loadMacro("src/week1/getHistMPPC.C");
     loadMacro("src/week1/getMultiGaus.C");
+    loadMacro("src/week1/searchPeak.C");
 }

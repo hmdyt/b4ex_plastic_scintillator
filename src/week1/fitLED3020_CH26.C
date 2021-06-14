@@ -3,16 +3,46 @@ void fitLED3020_CH26(){
     const TString FILENAME = "led3020.root";
     const TString CHANNEL = "26";
     const Double_t XMIN = 800;
-    const Double_t XMAX = 2200;
+    const Double_t XMAX = 2100;
 
-    // fetch hist
+    // init fitting propaties
+    const Double_t FIT_RANGE_MIN = 950;
+    const Double_t FIT_RANGE_MAX = 1950;
+
+    // fetch and configurate hist
     TH1D* hist = getHistMPPC(FILENAME, CHANNEL);
-
-    // arrange x range
     hist->GetXaxis()->SetRangeUser(XMIN, XMAX);
-
-    // arrange hist title
     hist->SetTitle(FILENAME + " " + CHANNEL);
+
+	// search peak 
+	const Int_t peakmax = 15;
+	vector<pair<Double_t, Double_t>> search_peak = searchPeak(hist, peakmax);
+
+	const Int_t GAUSNUM = search_peak.size();
+    const TString MULTIGAUS = getMultiGaus(GAUSNUM);
+
+    // init TF1
+    TF1* f = new TF1("f", MULTIGAUS, FIT_RANGE_MIN, FIT_RANGE_MAX);
+    f->SetNpx(10000);
+
+    // set parnames
+    for (Int_t i=0; i<GAUSNUM; i++) {
+        f->SetParName(3*i + 0, (TString)to_string(i) + (TString)"th Const");
+        f->SetParName(3*i + 1, (TString)to_string(i) + (TString)"th Mean"); 
+        f->SetParName(3*i + 2, (TString)to_string(i) + (TString)"th Sigma"); 
+    }
+
+    // set init params from setting file
+    Double_t ini_sigma =20;
+	for (Int_t i=0; i<GAUSNUM; i++){
+        f->SetParameter(3*i + 0, search_peak[i].second);
+        f->SetParameter(3*i + 1, search_peak[i].first);
+        f->SetParameter(3*i + 2, ini_sigma);
+        f->SetParLimits(3*i + 2, 0, 100);
+    }
+    
+    // execute fitting	
+	hist->Fit(f, "R");
 
     // draw and save
     auto c = new TCanvas();
