@@ -5,7 +5,7 @@ img/week1/led3020.rootCH26.svg
 </title>
 <desc>
 Creator: ROOT Version 6.22/08
-CreationDate: Mon Jun 14 15:12:40 2021</desc>
+CreationDate: Mon Jun 14 15:20:38 2021</desc>
 <defs>
 </defs>
 <rect x="0.5" y="0" width="566.929" height="385.804" fill="white"/>
@@ -1119,6 +1119,7 @@ CreationDate: Mon Jun 14 15:12:40 2021</desc>
 <text xml:space="preserve" x="321.327" y="359.813" fill="black" font-size="12.8882" font-family="Helvetica">1600</text>
 <text xml:space="preserve" x="391.178" y="359.813" fill="black" font-size="12.8882" font-family="Helvetica">1800</text>
 <text xml:space="preserve" x="461.028" y="359.813" fill="black" font-size="12.8882" font-family="Helvetica">2000</text>
+<text xml:space="preserve" x="448.845" y="374.433" fill="black" font-size="12.8882" font-family="Helvetica">ADC value</text>
 <path d="M57.1929,347.224v -308.643" fill="none" stroke="black"/>
 <path d="M70.7992,347.224h -13.6063" fill="none" stroke="black"/>
 <path d="M63.9961,337.892h -6.80315" fill="none" stroke="black"/>
@@ -1162,6 +1163,9 @@ CreationDate: Mon Jun 14 15:12:40 2021</desc>
 <text xml:space="preserve" x="32.1766" y="164.881" fill="black" font-size="12.8882" font-family="Helvetica">400</text>
 <text xml:space="preserve" x="32.1766" y="118.584" fill="black" font-size="12.8882" font-family="Helvetica">500</text>
 <text xml:space="preserve" x="32.1766" y="71.4753" fill="black" font-size="12.8882" font-family="Helvetica">600</text>
+<g transform="rotate(-90,21.6177,77.9731)">
+<text xml:space="preserve" x="21.6177" y="77.9731" fill="black" font-size="12.8882" font-family="Helvetica">Events</text>
+</g>
 <rect x="442.705" y="25.0773" width="113.386" height="61.7287" fill="white"/>
 <path d="M442.705,86.8059h 113.386" fill="none" stroke="black"/>
 <path d="M556.091,86.8059v -61.7287" fill="none" stroke="black"/>
