@@ -1,4 +1,4 @@
-void determineMeanWidth(TString run_number = "3018_CH26"){
+pair<Double_t, Double_t> determineMeanWidth(TString run_number = "3018_CH26"){
     // string correspond to function
     map<TString, vector<pair<Double_t, Double_t>>(*)()> fitLED = {
         {"3018_CH26", fitLED3018_CH26},
@@ -44,4 +44,7 @@ void determineMeanWidth(TString run_number = "3018_CH26"){
     c->Draw();
     c->SaveAs("img/week1/determineMeanWidth" + run_number + ".svg");
     c->SaveAs("img/week1/determineMeanWidth" + run_number + ".pdf");
+
+    // return
+    return make_pair(f->GetParameter(0), f->GetParError(0));
 }
