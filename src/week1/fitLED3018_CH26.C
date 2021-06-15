@@ -47,6 +47,7 @@ vector<pair<Double_t, Double_t>> fitLED3018_CH26(){
     // draw and save
     auto c = new TCanvas();
     hist->Draw();
+    getHistMPPC("led3022.root", "26")->Draw("SAME");
     c->SaveAs("img/week1/" + FILENAME + "CH" + CHANNEL + ".pdf");
     c->SaveAs("img/week1/" + FILENAME + "CH" + CHANNEL + ".svg");
 
