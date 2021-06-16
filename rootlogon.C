@@ -31,4 +31,5 @@ void rootlogon(){
     loadMacro("src/week1/fitLED3021_CH29.C");
     loadMacro("src/week1/determineMeanWidth.C");
     loadMacro("src/week1/drawVoltWidthGraph.C");
+    loadMacro("src/week1/drawCalbedHist.C");
 }
