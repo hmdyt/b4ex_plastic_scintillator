@@ -32,4 +32,7 @@ void rootlogon(){
     loadMacro("src/week1/determineMeanWidth.C");
     loadMacro("src/week1/drawVoltWidthGraph.C");
     loadMacro("src/week1/drawCalbedHist.C");
+	loadMacro("src/week2/getChannelCombinedHist.C");
+	loadMacro("src/week2/searchPeak.C");
+	loadMacro("src/week2/fitDelayHist.C");
 }
