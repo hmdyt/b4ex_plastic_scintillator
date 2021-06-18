@@ -39,12 +39,6 @@ TH1D* getChannelCombinedHist(
 
     // evil
     hist_res->GetXaxis()->SetLimits(0, 8196*2);
-    hist_res->Draw();
-
-
-    for (Int_t i=0; i<tar_files.size(); i++){
-        cout << tar_files[i] << endl;
-    }
 
     return hist_res;
 }
