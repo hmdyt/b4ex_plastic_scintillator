@@ -16,3 +16,5 @@
   | led3025 | 0 | 0 | 0 | 54.50 | 100000 |
   
   
+## week2
+- [解析に用いるデータ](https://github.com/hmdyt/b4ex_plastic_scintillator/blob/main/data/week2/info.txt)
