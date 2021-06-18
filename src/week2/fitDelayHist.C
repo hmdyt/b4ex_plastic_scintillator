@@ -4,16 +4,21 @@ pair<Double_t, Double_t> fitDelayHist(
 ){
 
 	// init fitting para
-	Int_t FitMin = 0;
-	Int_t FitMax = 8000;
+	//Int_t FitMin = 0;
+	//Int_t FitMax = 8000;
 
 	// get fitting parameter
 	TH1D *hist = getChannelCombinedHist(distance, tar_channels);
 	vector<pair<Double_t, Double_t>> peak = searchSinglePeak(hist);
 	Double_t Mean = peak[0].first;
 	Double_t Const = peak[0].second;
-	Double_t Sigma = 10;
+	Double_t Sigma = 0;
 	
+	Int_t FitMin = Mean - 50;
+	Int_t FitMax = Mean + 50;
+	
+	cout << Mean << " " << Const << " " << Sigma << endl;
+
 	// make fit
 	TF1 *f = new TF1("f", "gaus", FitMin, FitMax);
 
@@ -21,6 +26,7 @@ pair<Double_t, Double_t> fitDelayHist(
 	f->SetParameter(0, Const);
 	f->SetParameter(1, Mean);
 	f->SetParameter(2, Sigma);
+	f->SetParLimits(2, 0, 20);
 
 	// set para name
 	f->SetParName(0, "Const");
@@ -39,8 +45,8 @@ pair<Double_t, Double_t> fitDelayHist(
 	auto c = new TCanvas();
 	hist->GetXaxis()->SetRangeUser(Peak_Mean - 10 * Peak_Sigma, Peak_Mean + 10 * Peak_Sigma );
 	hist->Draw();
-	c->SaveAs("img/week2/" + distance + ".pdf");
-	c->SaveAs("img/week2/" + distance + ".svg");
+	c->SaveAs("img/week2/Combined" + distance + "mm.pdf");
+	c->SaveAs("img/week2/Combined" + distance + "mm.svg");
 	
 	//make pair
 	pair<Double_t, Double_t> res_pair;
