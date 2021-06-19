@@ -37,4 +37,7 @@ void rootlogon(){
 	loadMacro("src/week2/getChannelCombinedHist.C");
 	loadMacro("src/week2/searchSiglePeak.C");
 	loadMacro("src/week2/fitDelayHist.C");
+    loadMacro("src/week2/drawTimeDistGraph.C");
+    // week2 angule
+    loadMacro("src/week2/getTChainByDistance.C");
 }
