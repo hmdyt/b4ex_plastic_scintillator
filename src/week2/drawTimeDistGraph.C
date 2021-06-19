@@ -1,7 +1,7 @@
 pair<Double_t, Double_t> drawTimeDistGraph(
     // init calibration distances
     vector<TString> target_channels_low  = {"28", "29", "30", "31"},
-    vector<TString> calb_distances = {"0", "140", "280", "420", "560"}
+    vector<TString> calb_distances = {"0", "140", "280", "420", "560", "670"}
 ){
     vector<TString> target_channels_high;
     for (Int_t i = 0; i < target_channels_low.size(); i++){ target_channels_high.push_back(getInverseChannel(target_channels_low[i])); }
