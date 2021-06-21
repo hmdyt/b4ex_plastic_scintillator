@@ -47,5 +47,10 @@ void drawAngleTH2D(){
             }
         }
     }
+
+    // save
+    auto c = new TCanvas();
     hist->Draw("box");
+    c->SaveAs("img/week2/AngleTH2D.svg");
+    c->SaveAs("img/week2/AngleTH2D.pdf");
 }
