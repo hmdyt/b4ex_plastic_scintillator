@@ -5,7 +5,7 @@ img/week1/3021_CH26_Clbed.svg
 </title>
 <desc>
 Creator: ROOT Version 6.22/08
-CreationDate: Wed Jun 16 17:34:44 2021</desc>
+CreationDate: Mon Jun 21 14:22:16 2021</desc>
 <defs>
 </defs>
 <rect x="0.5" y="0" width="566.929" height="385.804" fill="white"/>
@@ -235,12 +235,6 @@ CreationDate: Wed Jun 16 17:34:44 2021</desc>
 <path d="M556.091,86.8059v -61.7287" fill="none" stroke="black"/>
 <path d="M556.091,25.0773h -113.386" fill="none" stroke="black"/>
 <path d="M442.705,25.0773v 61.7287" fill="none" stroke="black"/>
-<text xml:space="preserve" x="454.531" y="37.3621" fill="black" font-size="13.5253" font-family="Helvetica">ADC_HIGH_26</text>
-<path d="M442.705,40.5094h 113.386" fill="none" stroke="black"/>
-<text xml:space="preserve" x="448.033" y="52.7943" fill="black" font-size="12.7086" font-family="Helvetica">Entries </text>
-<text xml:space="preserve" x="508.137" y="52.7943" fill="black" font-size="12.7086" font-family="Helvetica"> 100001</text>
-<text xml:space="preserve" x="448.033" y="68.2264" fill="black" font-size="12.7086" font-family="Helvetica">Mean  </text>
-<text xml:space="preserve" x="513.01" y="68.2264" fill="black" font-size="12.7086" font-family="Helvetica">  8.967</text>
-<text xml:space="preserve" x="448.033" y="83.6586" fill="black" font-size="12.7086" font-family="Helvetica">Std Dev   </text>
-<text xml:space="preserve" x="513.01" y="83.6586" fill="black" font-size="12.7086" font-family="Helvetica">  3.054</text>
+<text xml:space="preserve" x="448.033" y="60.9165" fill="black" font-size="15.1375" font-family="Helvetica">Entries </text>
+<text xml:space="preserve" x="500.015" y="60.9165" fill="black" font-size="15.1375" font-family="Helvetica"> 100001</text>
 <text xml:space="preserve" x="215.738" y="18.681" fill="black" font-size="17.0471" font-family="Helvetica">led3021.root 26ch</text></svg>
