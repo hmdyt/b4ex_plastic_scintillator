@@ -23,30 +23,49 @@ TGraphErrors* drawEachNonCombinedTimeDistGraph(TString tar_channel_low){
         g->SetPointError(i, x_err, y_err);
     }
 
-    // init TF1 and fit
-    TF1* f = new TF1("f", "[0]*x + [1]", -8196, 8196);
-    f->SetParameters(y/x, 0);
-    g->Fit(f, "R");
-
     return g;
 }
 
-void drawNonCombinedTimeDistGraph(){
-    vector<TString> tar_chs = {"28", "29", "30", "31"};
+TF1* initEachNonCombinedTimeDistFunc(TGraphErrors* g){
+    TF1* f = new TF1("f", "[0]*x + [1]", -8196, 8196);
+    Int_t i = 3;
+    Double_t x = g->GetPointX(i);
+    Double_t y = g->GetPointY(i);
+    f->SetParameters(y/x, 0);
+    return f;
+}
+
+void drawNonCombinedTimeDistGraph(vector<TString> tar_chs = {"28", "29", "30", "31"}){
+    TString tar_chs_now;
+    vector<TF1*> fs;
+    map<Int_t, EColor> fit_color = { {0, kRed}, {1, kBlue}, {2, kGreen}, {3, kCyan}, };
+    map<Int_t, Int_t> point_style = {{0, 8}, {1, 3}, {2, 4}, {3, 5},};
     map<TString, TGraphErrors*> gg;
     for (Int_t i = 0; i < tar_chs.size(); i++){
-        gg[tar_chs[i]] = drawEachNonCombinedTimeDistGraph(tar_chs[i]);
+        tar_chs_now = tar_chs[i];
+        TGraphErrors* g_i = drawEachNonCombinedTimeDistGraph(tar_chs_now);
+        g_i->SetMarkerStyle(point_style[i]);
+        TF1* f_i = initEachNonCombinedTimeDistFunc(g_i);
+        f_i->SetLineColor(fit_color[i]);
+        fs.push_back(f_i);
+        g_i->Fit(f_i, "R");
+        gg[tar_chs_now] = g_i;
     }
 
     TCanvas* c_drawNonCombined = new TCanvas();
-    auto leg = new TLegend(0.5, 0.6, 0.89, 0.89,"Legend");
+    auto leg1 = new TLegend(0.3, 0.6, 0.4, 0.9, "");
     for (Int_t i = 0; i < tar_chs.size(); i++){
-        leg->AddEntry(gg[tar_chs[i]], "ch" + tar_chs[i], "l");
+        leg1->AddEntry(gg[tar_chs[i]], "ch" + tar_chs[i], "p");
+    }
+    auto leg2 = new TLegend(0.15, 0.6, 0.3, 0.9, "");
+    for (Int_t i = 0; i < fs.size(); i++){
+        leg2->AddEntry(fs[i], "ch" + tar_chs[i], "l");
     }
     
     gg[tar_chs[0]]->Draw("AP");
     for (Int_t i = 1; i < tar_chs.size(); i++){ gg[tar_chs[i]]->Draw("P SAME"); }
-    leg->Draw();
+    leg1->Draw();
+    leg2->Draw();
     c_drawNonCombined->Draw();
     c_drawNonCombined->SaveAs("img/week2/drawNonCombinedTimeDistGraph.pdf");
     c_drawNonCombined->SaveAs("img/week2/drawNonCombinedTimeDistGraph.svg");
