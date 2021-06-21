@@ -32,7 +32,7 @@ void rootlogon(){
     cout << "executed rootlogon" << endl;
 
     // style
-    SetMyStyle(true);
+    SetMyStyle(false);
 
     // week1
     loadMacro("src/week1/getHistMPPC.C");
