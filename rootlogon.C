@@ -56,6 +56,7 @@ void rootlogon(){
     loadMacro("src/week2/searchSiglePeak.C");
     loadMacro("src/week2/fitDelayHist.C");
     loadMacro("src/week2/drawTimeDistGraph.C");
+    loadMacro("src/week2/drawNonCombinedTimeDistGraph.C");
     // week2 angule
     loadMacro("src/week2/getTChainByDistance.C");
 }
