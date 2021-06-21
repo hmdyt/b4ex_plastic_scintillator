@@ -3,7 +3,7 @@ void drawAngleTH2DCalibrated(){
     const Double_t LAYER_NUM = 10;
     const Double_t DELEY_MAX = 10;
     TH2D* hist = new TH2D(
-        "angle", ";time lag [ps]; layer",
+        "angle", ";distance [mm]; layer",
         DELEY_MAX * 2,
         - DELEY_MAX,
         + DELEY_MAX,
@@ -38,9 +38,10 @@ void drawAngleTH2DCalibrated(){
 
     // arrange Xaxis
     hist->GetXaxis()->SetLimits(
-        f_calb(- DELEY_MAX, calb_const[1].first, calb_const[1].second),
-        f_calb(+ DELEY_MAX, calb_const[1].first, calb_const[1].second)
+        f_calb(- DELEY_MAX, calb_const[8].first, calb_const[1].second),
+        f_calb(+ DELEY_MAX, calb_const[8].first, calb_const[1].second)
     );
+    cout << calb_const[8].first << " " << calb_const[8].second << endl;
 
     // init for calling existing branch
     TChain* chain = getTChainByDistance("340");
