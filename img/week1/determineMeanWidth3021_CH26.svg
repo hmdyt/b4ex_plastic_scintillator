@@ -5,7 +5,7 @@ img/week1/determineMeanWidth3021_CH26.svg
 </title>
 <desc>
 Creator: ROOT Version 6.22/08
-CreationDate: Mon Jun 21 14:23:48 2021</desc>
+CreationDate: Mon Jun 21 14:35:58 2021</desc>
 <defs>
 </defs>
 <rect x="0.5" y="0" width="566.929" height="385.804" fill="white"/>
@@ -105,21 +105,6 @@ CreationDate: Mon Jun 21 14:23:48 2021</desc>
 <path d="M59.4606,154.963h 222.236" fill="none" stroke="#ff0000" stroke-width="2"/>
 <path d="M281.697,154.963h 222.236" fill="none" stroke="#ff0000" stroke-width="2"/>
 <path d="M503.933,154.963h 4.53543" fill="none" stroke="#ff0000" stroke-width="2"/>
-<rect x="351.996" y="25.0773" width="204.094" height="61.7287" fill="white"/>
-<path d="M351.996,86.8059h 204.094" fill="none" stroke="black"/>
-<path d="M556.091,86.8059v -61.7287" fill="none" stroke="black"/>
-<path d="M556.091,25.0773h -204.094" fill="none" stroke="black"/>
-<path d="M351.996,25.0773v 61.7287" fill="none" stroke="black"/>
-<text xml:space="preserve" x="377.37" y="40.611" fill="black" font-size="17.0043" font-family="Helvetica"> / ndf </text>
-<text xml:space="preserve" x="370.872" y="34.9254" fill="black" font-size="11.5029" font-family="Helvetica">2</text>
-<text xml:space="preserve" x="361.938" y="40.611" fill="black" font-size="17.0043" font-family="Times">&#0967;</text>
-<text xml:space="preserve" x="469.963" y="41.4232" fill="black" font-size="17.0043" font-family="Helvetica">   380 / 12</text>
-<text xml:space="preserve" x="361.938" y="61.7287" fill="black" font-size="17.0043" font-family="Helvetica">Prob  </text>
-<text xml:space="preserve" x="513.01" y="61.7287" fill="black" font-size="17.0043" font-family="Helvetica">     0</text>
-<text xml:space="preserve" x="361.938" y="82.8464" fill="black" font-size="17.0043" font-family="Helvetica">width    </text>
-<text xml:space="preserve" x="479.709" y="82.8464" fill="black" font-size="17.0043" font-family="Helvetica"> 0.04555</text>
-<text xml:space="preserve" x="469.963" y="82.8464" fill="black" font-size="17.0043" font-family="Times">&#0177;</text>
-<text xml:space="preserve" x="417.169" y="82.8464" fill="black" font-size="17.0043" font-family="Helvetica"> 85.92 </text>
 <path d="M57.1929,104.706v -19.5019" fill="none" stroke="black"/>
 <path d="M57.1929,85.2044h 1.62444" fill="none" stroke="black"/>
 <path d="M57.1929,104.706v 19.5019" fill="none" stroke="black"/>
@@ -172,19 +157,4 @@ CreationDate: Mon Jun 21 14:23:48 2021</desc>
 <path d="M467.881,261.721h 3.24888" fill="none" stroke="black"/>
 <path d="M469.505,291.612v 29.8914" fill="none" stroke="black"/>
 <path d="M467.881,321.504h 3.24888" fill="none" stroke="black"/>
-<rect x="351.996" y="25.0773" width="204.094" height="61.7287" fill="white"/>
-<path d="M351.996,86.8059h 204.094" fill="none" stroke="black"/>
-<path d="M556.091,86.8059v -61.7287" fill="none" stroke="black"/>
-<path d="M556.091,25.0773h -204.094" fill="none" stroke="black"/>
-<path d="M351.996,25.0773v 61.7287" fill="none" stroke="black"/>
-<text xml:space="preserve" x="377.37" y="40.611" fill="black" font-size="17.0043" font-family="Helvetica"> / ndf </text>
-<text xml:space="preserve" x="370.872" y="34.9254" fill="black" font-size="11.5029" font-family="Helvetica">2</text>
-<text xml:space="preserve" x="361.938" y="40.611" fill="black" font-size="17.0043" font-family="Times">&#0967;</text>
-<text xml:space="preserve" x="469.963" y="41.4232" fill="black" font-size="17.0043" font-family="Helvetica">   380 / 12</text>
-<text xml:space="preserve" x="361.938" y="61.7287" fill="black" font-size="17.0043" font-family="Helvetica">Prob  </text>
-<text xml:space="preserve" x="513.01" y="61.7287" fill="black" font-size="17.0043" font-family="Helvetica">     0</text>
-<text xml:space="preserve" x="361.938" y="82.8464" fill="black" font-size="17.0043" font-family="Helvetica">width    </text>
-<text xml:space="preserve" x="479.709" y="82.8464" fill="black" font-size="17.0043" font-family="Helvetica"> 0.04555</text>
-<text xml:space="preserve" x="469.963" y="82.8464" fill="black" font-size="17.0043" font-family="Times">&#0177;</text>
-<text xml:space="preserve" x="417.169" y="82.8464" fill="black" font-size="17.0043" font-family="Helvetica"> 85.92 </text>
 <text xml:space="preserve" x="97.1541" y="18.681" fill="black" font-size="18.7414" font-family="Helvetica">Each width between gaussians (3021_CH26)</text></svg>

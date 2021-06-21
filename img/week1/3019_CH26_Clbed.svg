@@ -5,7 +5,7 @@ img/week1/3019_CH26_Clbed.svg
 </title>
 <desc>
 Creator: ROOT Version 6.22/08
-CreationDate: Mon Jun 21 14:22:07 2021</desc>
+CreationDate: Mon Jun 21 14:35:50 2021</desc>
 <defs>
 </defs>
 <rect x="0.5" y="0" width="566.929" height="385.804" fill="white"/>
@@ -186,11 +186,4 @@ CreationDate: Mon Jun 21 14:22:07 2021</desc>
 <text xml:space="preserve" x="21.6177" y="71.4753" fill="black" font-size="12.8882" font-family="Helvetica">Event</text>
 </g>
 <text xml:space="preserve" x="215.738" y="18.681" fill="black" font-size="17.0471" font-family="Helvetica">led3019.root 26ch</text>
-<rect x="442.705" y="25.0773" width="113.386" height="61.7287" fill="white"/>
-<path d="M442.705,86.8059h 113.386" fill="none" stroke="black"/>
-<path d="M556.091,86.8059v -61.7287" fill="none" stroke="black"/>
-<path d="M556.091,25.0773h -113.386" fill="none" stroke="black"/>
-<path d="M442.705,25.0773v 61.7287" fill="none" stroke="black"/>
-<text xml:space="preserve" x="448.033" y="60.9165" fill="black" font-size="15.1375" font-family="Helvetica">Entries </text>
-<text xml:space="preserve" x="500.015" y="60.9165" fill="black" font-size="15.1375" font-family="Helvetica"> 100001</text>
 <text xml:space="preserve" x="215.738" y="18.681" fill="black" font-size="17.0471" font-family="Helvetica">led3019.root 26ch</text></svg>
