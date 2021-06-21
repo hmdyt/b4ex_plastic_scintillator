@@ -5,7 +5,7 @@ img/week2/AngleTH2D_calibrated_rebined.svg
 </title>
 <desc>
 Creator: ROOT Version 6.22/08
-CreationDate: Tue Jun 22 01:32:21 2021</desc>
+CreationDate: Tue Jun 22 01:36:08 2021</desc>
 <defs>
 </defs>
 <rect x="0.5" y="0" width="566.929" height="385.804" fill="white"/>
@@ -200,18 +200,4 @@ CreationDate: Tue Jun 22 01:32:21 2021</desc>
 <text xml:space="preserve" x="46.7965" y="58.4798" fill="black" font-size="12.8882" font-family="Helvetica">9</text>
 <g transform="rotate(-90,34.6132,69.8509)">
 <text xml:space="preserve" x="34.6132" y="69.8509" fill="black" font-size="12.8882" font-family="Helvetica"> layer</text>
-</g>
-<rect x="442.705" y="25.0773" width="113.386" height="15.4322" fill="white"/>
-<path d="M442.705,40.5094h 113.386" fill="none" stroke="black"/>
-<path d="M556.091,40.5094v -15.4322" fill="none" stroke="black"/>
-<path d="M556.091,25.0773h -113.386" fill="none" stroke="black"/>
-<path d="M442.705,25.0773v 15.4322" fill="none" stroke="black"/>
-<text xml:space="preserve" x="448.033" y="37.3621" fill="black" font-size="13.5253" font-family="Helvetica">Entries </text>
-<text xml:space="preserve" x="510.574" y="37.3621" fill="black" font-size="13.5253" font-family="Helvetica"> 35712</text>
-<rect x="442.705" y="25.0773" width="113.386" height="15.4322" fill="white"/>
-<path d="M442.705,40.5094h 113.386" fill="none" stroke="black"/>
-<path d="M556.091,40.5094v -15.4322" fill="none" stroke="black"/>
-<path d="M556.091,25.0773h -113.386" fill="none" stroke="black"/>
-<path d="M442.705,25.0773v 15.4322" fill="none" stroke="black"/>
-<text xml:space="preserve" x="448.033" y="37.3621" fill="black" font-size="13.5253" font-family="Helvetica">Entries </text>
-<text xml:space="preserve" x="510.574" y="37.3621" fill="black" font-size="13.5253" font-family="Helvetica"> 35712</text></svg>
+</g></svg>
