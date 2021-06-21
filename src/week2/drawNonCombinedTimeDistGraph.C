@@ -62,11 +62,17 @@ void drawNonCombinedTimeDistGraph(vector<TString> tar_chs = {"28", "29", "30", "
         leg2->AddEntry(fs[i], "ch" + tar_chs[i], "l");
     }
     
+    // identify name
+    TString identify_name = "_ch";
+    for (Int_t i = 0; i < tar_chs.size(); i++){
+        identify_name += "_" + tar_chs[i];
+    }
+
     gg[tar_chs[0]]->Draw("AP");
-    for (Int_t i = 1; i < tar_chs.size(); i++){ gg[tar_chs[i]]->Draw("P SAME"); }
+    for (Int_t i = 0; i < tar_chs.size(); i++){ gg[tar_chs[i]]->Draw("P SAME"); }
     leg1->Draw();
     leg2->Draw();
     c_drawNonCombined->Draw();
-    c_drawNonCombined->SaveAs("img/week2/drawNonCombinedTimeDistGraph.pdf");
-    c_drawNonCombined->SaveAs("img/week2/drawNonCombinedTimeDistGraph.svg");
+    c_drawNonCombined->SaveAs("img/week2/NonCombinedTimeDistGraph" + identify_name + ".pdf");
+    c_drawNonCombined->SaveAs("img/week2/NonCombinedTimeDistGraph" + identify_name + ".svg");
 }
