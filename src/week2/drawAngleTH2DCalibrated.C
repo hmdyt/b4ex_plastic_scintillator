@@ -75,4 +75,11 @@ void drawAngleTH2DCalibrated(){
     hist->Draw("box");
     c->SaveAs("img/week2/AngleTH2D_calibrated.svg");
     c->SaveAs("img/week2/AngleTH2D_calibrated.pdf");
+
+    // save rebin
+    auto c_rebined = new TCanvas();
+    hist->RebinX(2);
+    hist->Draw("box");
+    c_rebined->SaveAs("img/week2/AngleTH2D_calibrated_rebined.svg");
+    c_rebined->SaveAs("img/week2/AngleTH2D_calibrated_rebined.pdf");
 }
