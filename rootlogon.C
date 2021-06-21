@@ -12,9 +12,27 @@ void loadMacro(const TString macro_name){
     }
 }
 
+void SetMyStyle(bool is_show_fitted_values = true){
+    if (is_show_fitted_values){
+        gStyle->SetOptStat("e");
+        gStyle->SetOptFit(1111);
+    } else {
+        gStyle->SetOptStat("e");
+        gStyle->SetOptFit(1100);
+    }
+}
+
+void SetStatNull(){
+    gStyle->SetOptStat(000000000);
+    gStyle->SetOptFit(000000000);
+}
+
 void rootlogon(){
     // message
     cout << "executed rootlogon" << endl;
+
+    // style
+    SetMyStyle(true);
 
     // week1
     loadMacro("src/week1/getHistMPPC.C");
@@ -34,9 +52,9 @@ void rootlogon(){
     loadMacro("src/week1/drawCalbedHist.C");
 	// week2
     loadMacro("src/week2/getInverseChannel.C");
-	loadMacro("src/week2/getChannelCombinedHist.C");
-	loadMacro("src/week2/searchSiglePeak.C");
-	loadMacro("src/week2/fitDelayHist.C");
+    loadMacro("src/week2/getChannelCombinedHist.C");
+    loadMacro("src/week2/searchSiglePeak.C");
+    loadMacro("src/week2/fitDelayHist.C");
     loadMacro("src/week2/drawTimeDistGraph.C");
     // week2 angule
     loadMacro("src/week2/getTChainByDistance.C");
