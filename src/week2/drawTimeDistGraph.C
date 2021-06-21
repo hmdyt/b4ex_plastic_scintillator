@@ -9,6 +9,7 @@ pair<Double_t, Double_t> drawTimeDistGraph(
     // init TGraphErrors
     // x -> time, y -> distance
     TGraphErrors* g = new TGraphErrors();
+    g->SetTitle(";time lag [ps];distance [mm]");
 
     // set points
     // init tmp variables
@@ -37,10 +38,14 @@ pair<Double_t, Double_t> drawTimeDistGraph(
     g->Fit(f, "R");
 
     // save and draw
+    TString identify_name = "_ch";
+    for (Int_t i = 0; i < target_channels_low.size(); i++){
+        identify_name += "_" + target_channels_low[i];
+    }
     g->Draw("AP");
     c->Draw();
-    c->SaveAs("img/week2/time_distance_graph.pdf");
-    c->SaveAs("img/week2/time_distance_graph.svg");
+    c->SaveAs("img/week2/time_distance_graph" + identify_name + ".pdf");
+    c->SaveAs("img/week2/time_distance_graph" + identify_name + ".svg");
 
     // return y=ax+b pair(a, b)
     Double_t a = f->GetParameter(0);

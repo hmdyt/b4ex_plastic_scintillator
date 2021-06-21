@@ -41,12 +41,18 @@ pair<Double_t, Double_t> fitDelayHist(
 	Double_t Peak_Sigma = f->GetParameter(2);
 	Double_t Mean_Error = f->GetParError(1);
 
+	// prepare identify name for saving filename
+	TString identify_name = "_ch";
+	for (Int_t i = 0; i < tar_channels.size(); i++){
+		identify_name += "_" + tar_channels[i];
+	}
+
 	// draw and save
 	auto c = new TCanvas();
 	hist->GetXaxis()->SetRangeUser(Peak_Mean - 10 * Peak_Sigma, Peak_Mean + 10 * Peak_Sigma );
 	hist->Draw();
-	c->SaveAs("img/week2/Combined" + distance + "mm.pdf");
-	c->SaveAs("img/week2/Combined" + distance + "mm.svg");
+	c->SaveAs("img/week2/Combined" + distance + "mm" + identify_name + ".pdf");
+	c->SaveAs("img/week2/Combined" + distance + "mm" + identify_name + ".svg");
 	
 	//make pair
 	pair<Double_t, Double_t> res_pair;
