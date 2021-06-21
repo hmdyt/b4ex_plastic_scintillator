@@ -38,10 +38,9 @@ void drawAngleTH2DCalibrated(){
 
     // arrange Xaxis
     hist->GetXaxis()->SetLimits(
-        f_calb(- DELEY_MAX, calb_const[8].first, calb_const[1].second),
-        f_calb(+ DELEY_MAX, calb_const[8].first, calb_const[1].second)
+        f_calb(- DELEY_MAX, calb_const[8].first, calb_const[8].second),
+        f_calb(+ DELEY_MAX, calb_const[8].first, calb_const[8].second)
     );
-    cout << calb_const[8].first << " " << calb_const[8].second << endl;
 
     // init for calling existing branch
     TChain* chain = getTChainByDistance("340");
