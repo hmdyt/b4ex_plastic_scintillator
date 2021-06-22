@@ -19,7 +19,7 @@ TH1D* getChannelCombinedHist(
     TString hist_res_name = tar_dist + "mm";
     for (Int_t i=0; i<tar_channels.size(); i++){ hist_res_name += " " + tar_channels[i]; }
     // init hist
-    TH1D* hist_res = new TH1D(hist_res_name, hist_res_name + ";Time;Event", 4096, 0, 8196);
+    TH1D* hist_res = new TH1D(hist_res_name, hist_res_name + ";Time [ps];Event", 4096, 0, 8196);
 
     // fill to hist_res
     TH1D* hist_tmp;
