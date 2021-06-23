@@ -28,10 +28,13 @@ TGraphErrors* drawEachNonCombinedTimeDistGraph(TString tar_channel_low){
 
 TF1* initEachNonCombinedTimeDistFunc(TGraphErrors* g){
     TF1* f = new TF1("f", "[0]*x + [1]", -8196, 8196);
-    Int_t i = 3;
-    Double_t x = g->GetPointX(i);
-    Double_t y = g->GetPointY(i);
-    f->SetParameters(y/x, 0);
+    Double_t x_1 = g->GetPointX(1);
+    Double_t y_1 = g->GetPointY(1);
+    Double_t x_2 = g->GetPointX(4);
+    Double_t y_2 = g->GetPointY(4);
+    Double_t grad = (y_2 - y_1) / (x_2 - x_1);
+    Double_t segm = (y_1 * x_2 - y_2 * x_1) / (x_2 - x_1);
+    f->SetParameters(grad, segm);
     return f;
 }
 
@@ -48,7 +51,7 @@ void drawNonCombinedTimeDistGraph(vector<TString> tar_chs = {"28", "29", "30", "
         TF1* f_i = initEachNonCombinedTimeDistFunc(g_i);
         f_i->SetLineColor(fit_color[i]);
         fs.push_back(f_i);
-        g_i->Fit(f_i, "R");
+        g_i->Fit(fs[i], "R");
         gg[tar_chs_now] = g_i;
     }
 
