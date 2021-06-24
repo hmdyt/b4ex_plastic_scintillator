@@ -5,7 +5,7 @@ img/week2/time_distance_graph_ch_20_21_22_23.svg
 </title>
 <desc>
 Creator: ROOT Version 6.22/08
-CreationDate: Mon Jun 21 18:56:43 2021</desc>
+CreationDate: Thu Jun 24 11:56:23 2021</desc>
 <defs>
 </defs>
 <rect x="0.5" y="0" width="566.929" height="385.804" fill="white"/>
@@ -42,7 +42,7 @@ CreationDate: Mon Jun 21 18:56:43 2021</desc>
 <text xml:space="preserve" x="314.829" y="359.813" fill="black" font-size="12.8882" font-family="Helvetica">2</text>
 <text xml:space="preserve" x="403.361" y="359.813" fill="black" font-size="12.8882" font-family="Helvetica">4</text>
 <text xml:space="preserve" x="491.081" y="359.813" fill="black" font-size="12.8882" font-family="Helvetica">6</text>
-<text xml:space="preserve" x="440.723" y="372.809" fill="black" font-size="12.8882" font-family="Helvetica">time lag [ps]</text>
+<text xml:space="preserve" x="440.723" y="372.809" fill="black" font-size="12.8882" font-family="Helvetica">time lag [ns]</text>
 <path d="M57.1929,347.224v -308.643" fill="none" stroke="black"/>
 <path d="M70.7992,347.224h -13.6063" fill="none" stroke="black"/>
 <path d="M63.9961,338.848h -6.80315" fill="none" stroke="black"/>
