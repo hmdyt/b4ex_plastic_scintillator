@@ -70,6 +70,8 @@ void drawOneTrack(
         TCanvas* c = new TCanvas();
         g->SetMarkerStyle(8);
         g->Draw("AP");
-        c->Draw();
+        //c->Draw();
+        c->SaveAs("img/week2/tracks/svg/" + (TString)to_string((int)i_entry) + ".svg");
+        c->SaveAs("img/week2/tracks/pdf/" + (TString)to_string((int)i_entry) + ".pdf");
     }
 }
