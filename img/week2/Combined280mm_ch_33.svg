@@ -4,13 +4,8 @@
 img/week2/Combined280mm_ch_33.svg
 </title>
 <desc>
-<<<<<<< HEAD
-Creator: ROOT Version 6.22/08
-CreationDate: Thu Jun 24 12:20:34 2021</desc>
-=======
 Creator: ROOT Version 6.22/09
-CreationDate: Thu Jun 24 12:12:15 2021</desc>
->>>>>>> a2ad72d0e62997a205c767db9d32631af19cd893
+CreationDate: Thu Jun 24 12:33:06 2021</desc>
 <defs>
 </defs>
 <rect x="0.5" y="0" width="566.929" height="384.469" fill="white"/>
@@ -22,116 +17,6 @@ CreationDate: Thu Jun 24 12:12:15 2021</desc>
 <g fill="#ff0000">
 <polygon points=" 279.729, 48.8577 288.2, 48.8577 283.965, 57.329"/>
 </g>
-<<<<<<< HEAD
-<path d="M59.4606,347.224h 122.457l 4.53543, -0.0674107l 4.53543, -0.0899524l 4.53543, -0.193872l 4.53543, -0.398335l 4.53543, -0.77992l 4.53543, -1.45453l 4.53543, -2.5824l 4.53543, -4.36179l 4.53543, -7.00292l 4.53543, -10.676l 4.53543, -15.4333l
- 4.53543, -21.1177l 4.53543, -27.2841l 4.53543, -33.1704l 4.53543, -37.7542l 4.53543, -39.9131l 4.53543, -38.6709l 4.53543, -33.4744l 4.53543, -24.4155l 3.61067, -9.80275" fill="none" stroke="#ff0000" stroke-width="2"/>
-<path d="M277.502,38.5804l 4.19446, 13.7892" fill="none" stroke="#ff0000" stroke-width="2"/>
-<path d="M281.697,52.3696l 4.53543, 26.5031l 4.53543, 34.8336l 4.53543, 39.2252l 4.53543, 39.7271l 4.53543, 36.9975l 4.53543, 32.0641l 4.53543, 26.0469l 4.53543, 19.9258l 4.53543, 14.4009l 4.53543, 9.85547l 4.53543, 6.39762l 4.53543, 3.94434l
- 4.53543, 2.31198l 4.53543, 1.28942l 4.53543, 0.68468l 4.53543, 0.346332l 4.53543, 0.166956l 4.53543, 0.0767313l 4.53543, 0.056612h 131.528" fill="none" stroke="#ff0000" stroke-width="2"/>
-<path d="M499.398,347.224h 9.07087" fill="none" stroke="#ff0000" stroke-width="2"/>
-<rect x="351.996" y="25.0773" width="204.094" height="108.025" fill="white"/>
-<path d="M351.996,133.102h 204.094" fill="none" stroke="black"/>
-<path d="M556.091,133.102v -108.025" fill="none" stroke="black"/>
-<path d="M556.091,25.0773h -204.094" fill="none" stroke="black"/>
-<path d="M351.996,25.0773v 108.025" fill="none" stroke="black"/>
-<text xml:space="preserve" x="361.938" y="38.9865" fill="black" font-size="15.6962" font-family="Helvetica">Entries </text>
-<text xml:space="preserve" x="515.447" y="38.9865" fill="black" font-size="15.6962" font-family="Helvetica"> 237</text>
-<text xml:space="preserve" x="375.745" y="57.6676" fill="black" font-size="15.6962" font-family="Helvetica"> / ndf </text>
-<text xml:space="preserve" x="370.06" y="52.7943" fill="black" font-size="10.6308" font-family="Helvetica">2</text>
-<text xml:space="preserve" x="361.938" y="57.6676" fill="black" font-size="15.6962" font-family="Times">&#0967;</text>
-<text xml:space="preserve" x="481.334" y="57.6676" fill="black" font-size="15.6962" font-family="Helvetica"> 5.092 / 3</text>
-<text xml:space="preserve" x="361.938" y="75.5364" fill="black" font-size="15.6962" font-family="Helvetica">Prob  </text>
-<text xml:space="preserve" x="494.329" y="75.5364" fill="black" font-size="15.6962" font-family="Helvetica"> 0.1652</text>
-<text xml:space="preserve" x="361.938" y="94.2175" fill="black" font-size="15.6962" font-family="Helvetica">Const    </text>
-<text xml:space="preserve" x="511.386" y="93.4052" fill="black" font-size="15.6962" font-family="Helvetica"> 13.4</text>
-<text xml:space="preserve" x="502.452" y="93.4052" fill="black" font-size="15.6962" font-family="Times">&#0177;</text>
-<text xml:space="preserve" x="454.531" y="93.4052" fill="black" font-size="15.6962" font-family="Helvetica"> 150.9 </text>
-<text xml:space="preserve" x="361.938" y="111.274" fill="black" font-size="15.6962" font-family="Helvetica">Mean     </text>
-<text xml:space="preserve" x="520.32" y="111.274" fill="black" font-size="15.6962" font-family="Helvetica"> 0.2</text>
-<text xml:space="preserve" x="511.386" y="111.274" fill="black" font-size="15.6962" font-family="Times">&#0177;</text>
-<text xml:space="preserve" x="464.277" y="111.274" fill="black" font-size="15.6962" font-family="Helvetica"> 809.3 </text>
-<text xml:space="preserve" x="361.938" y="128.331" fill="black" font-size="15.6962" font-family="Helvetica">Sigma    </text>
-<text xml:space="preserve" x="502.452" y="129.143" fill="black" font-size="15.6962" font-family="Helvetica"> 0.148</text>
-<text xml:space="preserve" x="493.517" y="129.143" fill="black" font-size="15.6962" font-family="Times">&#0177;</text>
-<text xml:space="preserve" x="445.596" y="129.143" fill="black" font-size="15.6962" font-family="Helvetica"> 2.456 </text>
-<path d="M57.1929,347.224h 453.543" fill="none" stroke="black"/>
-<path d="M106.162,337.964v 9.2593" fill="none" stroke="black"/>
-<path d="M123.597,342.594v 4.62965" fill="none" stroke="black"/>
-<path d="M141.033,342.594v 4.62965" fill="none" stroke="black"/>
-<path d="M158.468,342.594v 4.62965" fill="none" stroke="black"/>
-<path d="M175.904,342.594v 4.62965" fill="none" stroke="black"/>
-<path d="M193.339,337.964v 9.2593" fill="none" stroke="black"/>
-<path d="M210.775,342.594v 4.62965" fill="none" stroke="black"/>
-<path d="M228.21,342.594v 4.62965" fill="none" stroke="black"/>
-<path d="M245.646,342.594v 4.62965" fill="none" stroke="black"/>
-<path d="M263.081,342.594v 4.62965" fill="none" stroke="black"/>
-<path d="M280.517,337.964v 9.2593" fill="none" stroke="black"/>
-<path d="M297.952,342.594v 4.62965" fill="none" stroke="black"/>
-<path d="M315.388,342.594v 4.62965" fill="none" stroke="black"/>
-<path d="M332.823,342.594v 4.62965" fill="none" stroke="black"/>
-<path d="M350.258,342.594v 4.62965" fill="none" stroke="black"/>
-<path d="M367.694,337.964v 9.2593" fill="none" stroke="black"/>
-<path d="M385.129,342.594v 4.62965" fill="none" stroke="black"/>
-<path d="M402.565,342.594v 4.62965" fill="none" stroke="black"/>
-<path d="M420,342.594v 4.62965" fill="none" stroke="black"/>
-<path d="M437.436,342.594v 4.62965" fill="none" stroke="black"/>
-<path d="M454.871,337.964v 9.2593" fill="none" stroke="black"/>
-<path d="M106.162,337.964v 9.2593" fill="none" stroke="black"/>
-<path d="M88.7266,342.594v 4.62965" fill="none" stroke="black"/>
-<path d="M71.2911,342.594v 4.62965" fill="none" stroke="black"/>
-<path d="M454.871,337.964v 9.2593" fill="none" stroke="black"/>
-<path d="M472.307,342.594v 4.62965" fill="none" stroke="black"/>
-<path d="M489.742,342.594v 4.62965" fill="none" stroke="black"/>
-<path d="M507.178,342.594v 4.62965" fill="none" stroke="black"/>
-<text xml:space="preserve" x="94.7174" y="359.813" fill="black" font-size="12.8882" font-family="Helvetica">790</text>
-<text xml:space="preserve" x="181.625" y="359.813" fill="black" font-size="12.8882" font-family="Helvetica">800</text>
-<text xml:space="preserve" x="268.532" y="359.813" fill="black" font-size="12.8882" font-family="Helvetica">810</text>
-<text xml:space="preserve" x="356.252" y="359.813" fill="black" font-size="12.8882" font-family="Helvetica">820</text>
-<text xml:space="preserve" x="443.16" y="359.813" fill="black" font-size="12.8882" font-family="Helvetica">830</text>
-<text xml:space="preserve" x="457.78" y="372.809" fill="black" font-size="12.8882" font-family="Helvetica">Time [ns]</text>
-<path d="M57.1929,347.224v -308.643" fill="none" stroke="black"/>
-<path d="M70.7992,347.224h -13.6063" fill="none" stroke="black"/>
-<path d="M63.9961,336.874h -6.80315" fill="none" stroke="black"/>
-<path d="M63.9961,326.523h -6.80315" fill="none" stroke="black"/>
-<path d="M63.9961,316.173h -6.80315" fill="none" stroke="black"/>
-<path d="M70.7992,305.823h -13.6063" fill="none" stroke="black"/>
-<path d="M63.9961,295.473h -6.80315" fill="none" stroke="black"/>
-<path d="M63.9961,285.122h -6.80315" fill="none" stroke="black"/>
-<path d="M63.9961,274.772h -6.80315" fill="none" stroke="black"/>
-<path d="M70.7992,264.422h -13.6063" fill="none" stroke="black"/>
-<path d="M63.9961,254.072h -6.80315" fill="none" stroke="black"/>
-<path d="M63.9961,243.722h -6.80315" fill="none" stroke="black"/>
-<path d="M63.9961,233.371h -6.80315" fill="none" stroke="black"/>
-<path d="M70.7992,223.021h -13.6063" fill="none" stroke="black"/>
-<path d="M63.9961,212.671h -6.80315" fill="none" stroke="black"/>
-<path d="M63.9961,202.321h -6.80315" fill="none" stroke="black"/>
-<path d="M63.9961,191.971h -6.80315" fill="none" stroke="black"/>
-<path d="M70.7992,181.62h -13.6063" fill="none" stroke="black"/>
-<path d="M63.9961,171.27h -6.80315" fill="none" stroke="black"/>
-<path d="M63.9961,160.92h -6.80315" fill="none" stroke="black"/>
-<path d="M63.9961,150.57h -6.80315" fill="none" stroke="black"/>
-<path d="M70.7992,140.22h -13.6063" fill="none" stroke="black"/>
-<path d="M63.9961,129.869h -6.80315" fill="none" stroke="black"/>
-<path d="M63.9961,119.519h -6.80315" fill="none" stroke="black"/>
-<path d="M63.9961,109.169h -6.80315" fill="none" stroke="black"/>
-<path d="M70.7992,98.8187h -13.6063" fill="none" stroke="black"/>
-<path d="M63.9961,88.4685h -6.80315" fill="none" stroke="black"/>
-<path d="M63.9961,78.1182h -6.80315" fill="none" stroke="black"/>
-<path d="M63.9961,67.768h -6.80315" fill="none" stroke="black"/>
-<path d="M70.7992,57.4178h -13.6063" fill="none" stroke="black"/>
-<path d="M70.7992,57.4178h -13.6063" fill="none" stroke="black"/>
-<path d="M63.9961,47.0676h -6.80315" fill="none" stroke="black"/>
-<text xml:space="preserve" x="46.7965" y="351.691" fill="black" font-size="12.8882" font-family="Helvetica">0</text>
-<text xml:space="preserve" x="39.4865" y="310.268" fill="black" font-size="12.8882" font-family="Helvetica">20</text>
-<text xml:space="preserve" x="39.4865" y="268.845" fill="black" font-size="12.8882" font-family="Helvetica">40</text>
-<text xml:space="preserve" x="39.4865" y="227.421" fill="black" font-size="12.8882" font-family="Helvetica">60</text>
-<text xml:space="preserve" x="39.4865" y="185.998" fill="black" font-size="12.8882" font-family="Helvetica">80</text>
-<text xml:space="preserve" x="32.1766" y="144.575" fill="black" font-size="12.8882" font-family="Helvetica">100</text>
-<text xml:space="preserve" x="32.1766" y="103.152" fill="black" font-size="12.8882" font-family="Helvetica">120</text>
-<text xml:space="preserve" x="32.1766" y="61.7287" fill="black" font-size="12.8882" font-family="Helvetica">140</text>
-<g transform="rotate(-90,21.6177,71.4753)">
-<text xml:space="preserve" x="21.6177" y="71.4753" fill="black" font-size="12.8882" font-family="Helvetica">Event</text>
-=======
 <path d="M59.4606,346.022h 122.457l 4.53543, -0.0671774l 4.53543, -0.0896412l 4.53543, -0.193201l 4.53543, -0.396956l 4.53543, -0.777221l 4.53543, -1.44949l 4.53543, -2.57347l 4.53543, -4.34669l 4.53543, -6.97868l 4.53543, -10.639l 4.53543, -15.3799l
  4.53543, -21.0446l 4.53543, -27.1897l 4.53543, -33.0556l 4.53543, -37.6236l 4.53543, -39.775l 4.53543, -38.537l 4.53543, -33.3586l 4.53543, -24.331l 3.61067, -9.76883" fill="none" stroke="#ff0000" stroke-width="2"/>
 <path d="M277.502,38.4469l 4.19446, 13.7414" fill="none" stroke="#ff0000" stroke-width="2"/>
@@ -172,7 +57,7 @@ CreationDate: Thu Jun 24 12:12:15 2021</desc>
 <text xml:space="preserve" x="269.303" y="358.403" fill="black" font-size="12.8453" font-family="Helvetica">810</text>
 <text xml:space="preserve" x="356.46" y="358.403" fill="black" font-size="12.8453" font-family="Helvetica">820</text>
 <text xml:space="preserve" x="443.617" y="358.403" fill="black" font-size="12.8453" font-family="Helvetica">830</text>
-<text xml:space="preserve" x="460.723" y="370.622" fill="black" font-size="12.8453" font-family="Helvetica">Time [ps]</text>
+<text xml:space="preserve" x="460.723" y="370.622" fill="black" font-size="12.8453" font-family="Helvetica">Time [ns]</text>
 <path d="M57.1929,346.022v -307.575" fill="none" stroke="black"/>
 <path d="M70.7992,346.022h -13.6063" fill="none" stroke="black"/>
 <path d="M63.9961,335.708h -6.80315" fill="none" stroke="black"/>
@@ -215,6 +100,5 @@ CreationDate: Thu Jun 24 12:12:15 2021</desc>
 <text xml:space="preserve" x="33.8967" y="61.9061" fill="black" font-size="12.8453" font-family="Helvetica">140</text>
 <g transform="rotate(-90,20.8638,70.0516)">
 <text xml:space="preserve" x="20.8638" y="70.0516" fill="black" font-size="12.8453" font-family="Helvetica">Event</text>
->>>>>>> a2ad72d0e62997a205c767db9d32631af19cd893
 </g>
 <text xml:space="preserve" x="243.237" y="18.7347" fill="black" font-size="16.9898" font-family="Helvetica">280mm 33</text></svg>
