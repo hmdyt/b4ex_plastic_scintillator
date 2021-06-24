@@ -59,4 +59,8 @@ void rootlogon(){
     loadMacro("src/week2/drawNonCombinedTimeDistGraph.C");
     // week2 angule
     loadMacro("src/week2/getTChainByDistance.C");
+    // week2 track
+    loadMacro("src/week2/getCalibrationConstants.C");
+    loadMacro("src/week2/drawOneTrack.C");
+    loadMacro("src/week2/drawSomeTracks.C");
 }
