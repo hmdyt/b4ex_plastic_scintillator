@@ -3,7 +3,7 @@ void drawAngleTH2D(){
     const Double_t LAYER_NUM = 10;
     const Double_t DELEY_MAX = 10;
     TH2D* hist = new TH2D(
-        "angle", ";time lag [ps]; layer",
+        "angle", ";time lag [ns]; layer",
         DELEY_MAX * 2,
         - DELEY_MAX,
         + DELEY_MAX,

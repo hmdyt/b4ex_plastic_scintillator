@@ -9,7 +9,7 @@ pair<Double_t, Double_t> drawTimeDistGraph(
     // init TGraphErrors
     // x -> time, y -> distance
     TGraphErrors* g = new TGraphErrors();
-    g->SetTitle(";time lag [ps];distance [mm]");
+    g->SetTitle(";time lag [ns];distance [mm]");
 
     // set points
     // init tmp variables

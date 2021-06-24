@@ -4,7 +4,7 @@ TGraphErrors* drawEachNonCombinedTimeDistGraph(TString tar_channel_low){
 
     // init TGraph
     TGraphErrors* g = new TGraphErrors();
-    g->SetTitle(";time lag[ps];distance [mm]");
+    g->SetTitle(";time lag[ns];distance [mm]");
 
     // fill
     Double_t x, y, x_err, y_err;
